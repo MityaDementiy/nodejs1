@@ -1,1 +1,1 @@
-Testing ansi and readline sync
+Testing ansi and readline sync.
