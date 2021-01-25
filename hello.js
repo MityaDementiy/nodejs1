@@ -1,8 +1,10 @@
 import readlineSync from 'readline-sync';
+import ansi from 'ansi';
 
 const sayHello = () => {
+  const cursor = ansi(process.stdout);
   const getName = readlineSync.question('Hi! What is your name? ');
-  console.log(`Hello and welcome, ${getName}!`);
+  cursor.yellow().write(`Hello and welcome, ${getName}!`);
 }
 
 export default sayHello;
